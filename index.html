@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        function toggleMenu() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <body>
+            <header class="header">
+                <div class="wrapper">
+                    <nav class="navbar">
+                        <div class="logo">Focus.Frame</div>
+                        <ul class="nav-links">
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#courses">OUR COURSES</a></li>
+                            <li><a href="#mentors">OUR MENTORS</a></li>
+                            <li><a href="#reviews">REVIEWS</a></li>
+                            <li><a href="#contacts">CONTACTS</a></li>
+                        </ul>
+                        <a href="#signup" class="signup">SIGN UP</a>
+                        <div class="mobile-menu" onclick="toggleMenu()">📷</div>
+                    </nav>
+                    <div class="mobile-nav">
+                        <a href="#about" onclick="toggleMenu()">ABOUT US</a>
+                        <a href="#courses" onclick="toggleMenu()">OUR COURSES</a>
+                        <a href="#mentors" onclick="toggleMenu()">OUR MENTORS</a>
+                        <a href="#reviews" onclick="toggleMenu()">REVIEWS</a>
+                        <a href="#contacts" onclick="toggleMenu()">CONTACTS</a>
+                    </div>
+                    <section class="hero">
+                        <h1>Welcome to Focus.Frame</h1>
+                    </section>
+                </div>
+    </header>
+</body>
+</html>

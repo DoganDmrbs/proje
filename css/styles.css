@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    position: relative;
+    background: url('background.png') no-repeat center center/cover;
+    min-height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.signup {
+    color: black;
+    background-color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: black;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+}
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 16px;
+}
+.mobile-nav.active {
+    right: 0;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+    .nav-links, .signup {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+        color: white;
+        font-size: 24px;
+    }
+}
